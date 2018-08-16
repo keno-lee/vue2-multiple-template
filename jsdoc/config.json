@@ -1,0 +1,20 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["./"],
+    "exclude": ["./node_modules"],
+    "includePattern": ".+\\.(js|scss|vue)$"
+  },
+  "plugins": ["./plugins/commentOnly"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./.jsdoc"
+  }
+}
